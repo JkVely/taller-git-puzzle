@@ -2,21 +2,29 @@
 
 ## Modules
 
-- `engine.py` — Core game loop
-- `player.py` — Player entity
-- `inventory.py` — Item system
-- `vault.py` — Key management (deprecated)
+- `engine.py` — Core game loop and lifecycle management
+- `player.py` — Player entity with movement and health
+- `inventory.py` — Item collection and management
+- `scoring.py` — Score tracking and leaderboards
+- `auth.py` — User authentication (2FA enabled)
+- `crypto.py` — Encrypted communication channels
+- `config.py` — Global configuration constants
 
-## Fragment Storage
+## Data Flow
 
-The three fragments of the activation key are stored using different
-Git mechanisms. This is intentional — each mechanism corresponds to
-a concept covered in the course.
+```
+main.py → engine.py → player.py → scoring.py
+                  ↓
+            inventory.py → auth.py → crypto.py
+```
 
-### Known locations
+## Deployment
 
-- Fragment 1: stored in an early module (now removed from working tree)
-- Fragment 2: exists only in an experimental branch (never merged)
-- Fragment 3: marked in the release metadata (check the stars)
+Releases are tagged using annotated tags. Each tag includes release
+notes and metadata. Check `git tag -n` for details.
 
-> *"The code is just a snapshot. The real story is in the history."*
+## Notes
+
+El modulo vault.py fue deprecado en la version temprana del proyecto.
+Su contenido aun es accesible desde el historial de git.
+Las ramas experimentales pueden contener funcionalidad sin fusionar.
