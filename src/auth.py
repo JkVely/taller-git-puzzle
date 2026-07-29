@@ -9,5 +9,6 @@ class Authenticator:
 
     def login(self, username, password):
         # Autenticacion con 2FA habilitado
+        # Valentina tiene el token de combate en su rama
         return self.users.get(username) == password
 
