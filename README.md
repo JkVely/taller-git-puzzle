@@ -1,29 +1,62 @@
 # Project Phoenix
 
-**Repositorio colaborativo de desarrollo de videojuegos.**
+Prototipo colaborativo de videojuego desarrollado como parte del curso de Git y CI/CD del **GLUD — Universidad Distrital**.
 
-Este proyecto es un experimento de trabajo en equipo con Git. O al menos, eso es lo que parece.
+## Requisitos
+
+- Python 3.10+
+- pytest (opcional, para pruebas)
+
+```
+pip install -r requirements.txt
+```
+
+## Cómo ejecutar
+
+```bash
+python src/main.py
+```
+
+## Cómo probar
+
+```bash
+pytest tests/
+```
+
+## Estructura del proyecto
+
+```
+src/
+  main.py        — Punto de entrada
+  engine.py      — Motor del juego
+  player.py      — Sistema de jugador
+  inventory.py   — Sistema de inventario
+  scoring.py     — Sistema de puntuación
+  auth.py        — Autenticación
+  crypto.py      — Comunicaciones cifradas
+  config.py      — Configuración
+docs/
+  ARCHITECTURE.md — Documentación de arquitectura
+tests/
+  test_engine.py — Pruebas unitarias
+```
+
+## Convenciones
+
+- **Conventional Commits**: feat, fix, docs, test, chore, refactor
+- **Git Flow**: main, develop, feature/*, release/*
+- **Code Review**: Toda fusión requiere revisión
+
+## Créditos
+
+| Rol | Persona |
+|-----|---------|
+| Tech Lead | Ana María López |
+| Backend | Carlos Ruiz |
+| Gameplay | Valentina Ortiz |
+| QA | Diego Torres |
+| Documentación | Sofía Herrera |
 
 ---
 
-## ⚠️ Clasificado
-
-Tres fragmentos. Un historial completo. Una clave.
-
-La clave fue dividida en tres partes. Cada parte fue escondida usando una técnica diferente de Git, todas cubiertas en el curso.
-
-Tu tarea: reconstruye los fragmentos a partir del historial del repositorio.
-
-> *"El que controla el historial, controla el código."*
-
----
-
-### Pistas iniciales (ninguna es lo que parece)
-
-- Todo lo que necesitas está en el historial.
-- No todos los commits son lo que aparentan.
-- Algunos archivos vivieron y murieron antes de que llegaras.
-- Las ramas guardan secretos que nunca llegaron a producción.
-- Las etiquetas no solo marcan versiones.
-
-Buena suerte.
+*Proyecto académico sin fines de lucro. GLUD 2026.*
