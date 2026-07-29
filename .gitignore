@@ -1,0 +1,8 @@
+*.class
+*.log
+*.tmp
+build/
+target/
+.DS_Store
+*.pyc
+__pycache__/
