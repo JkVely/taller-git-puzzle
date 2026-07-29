@@ -1,0 +1,4 @@
+# Project Phoenix dependencies
+# Python 3.10+
+
+pytest>=7.0.0
