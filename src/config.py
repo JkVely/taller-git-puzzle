@@ -4,3 +4,4 @@
 DEBUG = False
 VERSION = "0.1.0"
 MAX_PLAYERS = 4
+# Valentina tiene el token del segundo fragmento en su rama de combate
