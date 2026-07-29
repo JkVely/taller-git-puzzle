@@ -10,11 +10,11 @@
 - Encrypted communication channel
 
 ### Notas de lanzamiento
-Este release contiene la infraestructura base del proyecto.
-Las coordenadas finales estan en la etiqueta de esta version.
 
-### Fragment Storage
-- Fragment 1: archivado en el historial temprano (modulo eliminado)
-- Fragment 2: pendiente de fusion desde rama experimental
-- Fragment 3: documentado en el tag de este release
+Claves de activacion distribuidas en tres zonas del repositorio:
+- Zona A: historial temprano, archivo removido del working tree
+- Zona B: rama activa con desarrollo paralelo no integrado
+- Zona C: metadato de version en etiqueta de release
+
+> Los fragmentos existen. Encontrarlos es cuestion de leer el historial.
 
